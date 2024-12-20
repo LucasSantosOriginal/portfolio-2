@@ -1,0 +1,116 @@
+
+/* Geral Style */
+* {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contact button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#cc0000;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* HEADER STYLE */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #cc0000;
+    transform: scale(1.15);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contact button:hover {
+    box-shadow: 0px 0px 8px #f00303 ;
+    transform: scale(1.09);
+}
+
+/* TOP SITE STYLE */
+
+section.site-top {
+    padding: 40px 4%;
+}
+
+section.site-top .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.site-top h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.site-top .txt-site-top h1 span {
+    color:#cc0000 ;
+}
+
+.site-top .txt-site-top p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.site-top .img-top-site img {
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 1px 15px #cc0000);}
+
+
+@keyframes float {
+    0%{
+        top: 0;
+
+    }
+    100% {
+        top: 44px
+    }
+}
